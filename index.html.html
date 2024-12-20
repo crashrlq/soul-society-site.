@@ -1,0 +1,219 @@
+<html>
+ <head>
+  <title>
+   Soul Society
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1c1c1e;
+            color: #d1d1d1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header, .footer {
+            background-color: #2c2c2e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img, .footer img {
+            height: 40px;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .main h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .main h1 span {
+            color: #007bff;
+        }
+        .main p {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        .main .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .main .buttons a, .main .buttons button {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: 1px solid #3a3a3c;
+            border-radius: 5px;
+            color: #d1d1d1;
+            text-decoration: none;
+            cursor: pointer;
+            background: none;
+        }
+        .main .buttons a i, .main .buttons button i {
+            margin-right: 10px;
+        }
+        .footer {
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .partners {
+            text-align: right;
+        }
+        .footer .partners a {
+            color: #d1d1d1;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+        }
+        .footer .partners a:hover {
+            text-decoration: underline;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer .social {
+            display: flex;
+            align-items: center;
+        }
+        .footer .social i {
+            margin-right: 5px;
+        }
+        .hidden-text, .hidden-buttons {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #d1d1d1;
+        }
+        .hidden-buttons a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            border: 1px solid #3a3a3c;
+            border-radius: 5px;
+            color: #d1d1d1;
+            text-decoration: none;
+            text-align: center;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1000;
+        }
+        .overlay-content {
+            background-color: #2c2c2e;
+            padding: 20px;
+            border-radius: 10px;
+            color: #d1d1d1;
+        }
+        .overlay-content h2 {
+            margin-top: 0;
+        }
+        .overlay-content button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+  </style>
+  <script>
+   function showOverlay() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+        function hideOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+        function showPartnersOverlay() {
+            document.getElementById('partners-overlay').style.display = 'flex';
+        }
+        function hidePartnersOverlay() {
+            document.getElementById('partners-overlay').style.display = 'none';
+        }
+  </script>
+ </head>
+ <body>
+  <header class="header">
+   <img alt="Soul Society" height="40" src="https://cdn.discordapp.com/icons/1237119787897983017/1d358438f5c3bee51a3913583f6b055f.png?size=2048" width="40"/>
+  </header>
+  <main class="main">
+   <h1>
+    Bem-vindo(a)
+    <span>
+    Soul Society Web Site
+    </span>
+   </h1>
+   <p>
+    Em nosso servidor você encontra diversas formas de se divertir.
+   </p>
+   <div class="buttons">
+    <a href="javascript:void(0);" onclick="showOverlay()">
+     <i class="fas fa-comments">
+     </i>
+     Por que entrar no serve?
+    </a>
+    <a href="https://discord.gg/yzwp7up9k5" target="https://discord.gg/yzwp7up9k5">
+     <i class="fab fa-discord">
+     </i>
+     Ir para Servidor
+    </a>
+    <button onclick="https://discord.gg/yzwp7up9k5
+     <i class="fas fa-check-circle">
+     </i>
+     Verifique-se
+    </button>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="social">
+    <img alt="Soul Society" height="40" src="https://cdn.discordapp.com/icons/1237119787897983017/1d358438f5c3bee51a3913583f6b055f.png?size=2048" width="40"/>
+    <p>
+        𝗩𝗲𝗻𝗵𝗮 𝗽𝗮𝗿𝗮 𝘃𝗼𝘀𝘀𝗼 𝘀𝗲𝗿𝘃𝗶𝗱𝗼𝗿.
+    </p>
+   </div>
+   <div class="partners">
+    <p>
+        𝗢𝘄𝗻𝗲𝗿 𝗗𝗲𝗹𝗹𝘀 
+    </p>
+    <a href="javascript:void(0);" onclick="">
+     
+    </a>
+   </div>
+  </footer>
+  <div class="overlay" id="overlay">
+   <div class="overlay-content">
+    <h2>
+     Por que entrar em vosso servidor?
+    </h2>
+    <p>
+     Nosso servidor oferece sorteios semanalmente, interação diaria, otimo para fazer novos amigos e jogar seu game favorito 
+    </p>
+    <button onclick="hideOverlay()">
+     Fechar
+    </button>
+   </div>
+  </div>
+  <div class="overlay" id="partners-overlay">
+   <div class="overlay-content">
+    
